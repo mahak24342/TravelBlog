@@ -5,14 +5,14 @@ import GoogleProvider from 'next-auth/providers/google';
   // Configure one or more authentication providers
   providers: [
     GithubProvider({
-        clientId:'Ov23licxyOxGMmBrWr6j',
-        clientSecret:'75ba7aa136bc404ee3bec99ffa614e9d0749a419'
+        clientId:process.env.GITHUB_URI,
+        clientSecret:process.env.GITHUB_CLIENT,
     }),
     // ...add more providers here
 
     GoogleProvider({
-        clientId: '675564386966-a7t0r0ksp5v419rqjnrm59ig894dd19d.apps.googleusercontent.com',
-        clientSecret: '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',
+        clientId: process.env.GOOGLEURI,
+        clientSecret:process.env.GOOGLE_CLIENT,
       }),
   ],
 });

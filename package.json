@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "lucide-react": "^0.453.0",
     "mongoose": "^8.7.2",
     "next": "13.5.6",
